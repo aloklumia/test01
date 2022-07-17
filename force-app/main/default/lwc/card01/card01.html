@@ -1,0 +1,28 @@
+<template>
+    <div>
+        <div>Name 10014: {name}</div>
+        <div>Description: {description}</div>
+        <div>Category: {category}</div>
+        <div>Material: {material}</div>
+        <div>Price: {price}</div>
+    </div>
+
+    <table>
+        <template for:each={records} for:item ='record'>        
+            <tr class="" key = {record.Id}>
+                
+                <td data-label="Account Name">
+                    <div class="slds-cell-wrap"><a href="javascript:void(0);">{record.Name}</a></div>
+                </td>
+                <td data-label="Parent Account">
+                    <div class="slds-cell-wrap"><a href="javascript:void(0);">{record.Id}</a></div>
+                </td>
+            
+            
+            </tr>
+
+            
+        </template>
+    </table>
+
+</template>
